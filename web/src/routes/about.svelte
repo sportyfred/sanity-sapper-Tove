@@ -2,7 +2,7 @@
   export async function preload({ params }) {
     try {
       // As with the server route, we have acces to params.slug here
-      const res = await this.fetch(`api/author/author`);
+      const res = await this.fetch(`api/blog/author`);
       const { author } = await res.json();
       return { author };
     } catch (err) {
