@@ -47,8 +47,10 @@
 
 <h1>{author[0].name}</h1>
 
+
 <div class="content">
   <BlockContent blocks={author[0].image} {serializers} />
+   <BlockContent blocks={author[0].bio} {serializers} />
 </div>
 
- {JSON.stringify(author[0])}
+

@@ -6,9 +6,9 @@ export async function get (req, res) {
    
   
 
-    const query = "*[_type == 'author']{_id, slug, title, image, bio, name}";
-    const author = await client.fetch(query)
-    res.end(JSON.stringify({ author }));
+    const query = "*[_type == 'frontpage']{_id, slug, title, image, bio, name}";
+    const frontpage = await client.fetch(query)
+    res.end(JSON.stringify({ frontpage }));
   } catch (err) {
     res.writeHead(500, {
       'Content-Type': 'application/json'
