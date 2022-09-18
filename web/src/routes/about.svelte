@@ -19,27 +19,7 @@
 </script>
 
 <style>
-  .content :global(h2) {
-    font-size: 1.4em;
-    font-weight: 500;
-  }
-
-  .content :global(img) {
-    display: block;
-    max-width: 100%;
-  }
-
-  .content :global(figure) {
-    margin: 0;
-  }
-
-  .content :global(ul) {
-    line-height: 1.5;
-  }
-
-  .content :global(li) {
-    margin: 0 0 0.5em 0;
-  }
+  
 </style>
 <svelte:head>
   <title>{author[0].name}</title>
@@ -47,10 +27,8 @@
 
 <h1>{author[0].name}</h1>
 
-
-<div class="content">
   <BlockContent blocks={author[0].image} {serializers} />
    <BlockContent blocks={author[0].bio} {serializers} />
-</div>
+
 
 

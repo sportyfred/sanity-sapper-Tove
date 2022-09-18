@@ -1,9 +1,12 @@
 <script context="module">
   export async function preload({ params }) {
     try {
+    
       const res = await this.fetch('api/blog/all');
       const { posts } = await res.json()
+
       return { posts };
+
     } catch (err) {
       this.error(500, err);
     }
@@ -16,6 +19,9 @@
   function formatDate(date) {
     return new Date(date).toLocaleDateString()
   }
+
+
+  
 </script>
 
 <style>
@@ -28,7 +34,7 @@
 <svelte:head>
 	<title>Blog</title>
 </svelte:head>
-
+<div id="result"></div>
 <h1>Recent posts</h1>
 
 <ul>
@@ -37,6 +43,9 @@
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-		<li><a rel='prefetch' href='blog/{post.slug.current}'>{post.title}</a> ({formatDate(post.publishedAt)})</li>
+		<li><a rel='prefetch' href='blog/{post.slug.current}'>{post.title}</a> ({formatDate(post.publishedAt)}) 
+
+
+		{JSON.stringify(post,null,4)}</li>
 	{/each}
 </ul>

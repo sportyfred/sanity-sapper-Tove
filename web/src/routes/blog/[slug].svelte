@@ -16,38 +16,22 @@
   import serializers from "../../components/serializers";
 
   export let post;
+  console.log(JSON.stringify(post,null,4));
 </script>
 
+
 <style>
-  .content :global(h2) {
-    font-size: 1.4em;
-    font-weight: 500;
-  }
-
-  .content :global(img) {
-    display: block;
-    max-width: 100%;
-  }
-
-  .content :global(figure) {
-    margin: 0;
-  }
-
-  .content :global(ul) {
-    line-height: 1.5;
-  }
-
-  .content :global(li) {
-    margin: 0 0 0.5em 0;
-  }
+  
 </style>
 
 <svelte:head>
   <title>{post.title}</title>
 </svelte:head>
-
+    {JSON.stringify(post,null,4)}
 <h1>{post.title}</h1>
 
-<div class="content">
   <BlockContent blocks={post.body} {serializers} />
-</div>
+
+
+
+
