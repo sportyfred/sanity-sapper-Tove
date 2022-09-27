@@ -25,6 +25,9 @@
   <title>{author[0].name}</title>
 </svelte:head>
 
+
+
+
 <h1>{author[0].name}</h1>
 
   <BlockContent blocks={author[0].image} {serializers} />

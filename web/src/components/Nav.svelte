@@ -7,7 +7,6 @@
 </style>
 
 
-	<ul>
 		<li><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
 		<li><a class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
 
@@ -15,4 +14,4 @@
 		     the blog data when we hover over the link or tap it on a touchscreen -->
 		<li><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>works</a></li>
 		<li><a rel=prefetch class='{segment === "works" ? "selected" : ""}' href='works'>works</a></li>
-	</ul>
+
