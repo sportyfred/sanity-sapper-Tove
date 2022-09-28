@@ -16,7 +16,7 @@
   import serializers from "../../components/serializers";
 
   export let post;
-  console.log(JSON.stringify(post,null,4));
+ 
 </script>
 
 
@@ -27,11 +27,11 @@
 <svelte:head>
   <title>{post.title}</title>
 </svelte:head>
-    {JSON.stringify(post,null,4)}
+  <article class="prose lg:prose-xl">  
 <h1>{post.title}</h1>
 
   <BlockContent blocks={post.body} {serializers} />
 
 
-
+</article>
 
