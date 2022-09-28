@@ -18,7 +18,7 @@ export async function get (req, res) {
    
 const projection = `
       
-{...,  authors[]{author->{name}},
+{...,  authors[0]{author->{name}},
 categories[]->{title}  }      
       
     `;

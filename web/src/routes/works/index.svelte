@@ -37,6 +37,8 @@
 <div id="result"></div>
 <h1>Recent posts</h1>
 
+ 
+
 <ul>
   {#each posts as post}
     <!-- we're using the non-standard `rel=prefetch` attribute to
@@ -45,7 +47,7 @@
         waiting for the 'click' event -->
     <li>{post.title} ({formatDate(post.publishedAt)}) 
 <br>
-{post.authors[0].author.name}
+{post.authors.author.name}
 <br>
 {#each post.categories as category}
 <li>{category.title}</li>{/each}

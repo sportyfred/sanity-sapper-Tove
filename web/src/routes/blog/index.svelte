@@ -46,6 +46,6 @@
 		<li><a rel='prefetch' href='blog/{post.slug.current}'>{post.title}</a> ({formatDate(post.publishedAt)}) 
 
 
-		{JSON.stringify(post,null,4)}</li>
+		</li>
 	{/each}
 </ul>
