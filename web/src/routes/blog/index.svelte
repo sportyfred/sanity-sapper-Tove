@@ -25,16 +25,16 @@
 </script>
 
 <style>
-	ul {
-		margin: 0 0 1em 0;
-		line-height: 1.5;
-	}
+
 </style>
 
 <svelte:head>
 	<title>Blog</title>
 </svelte:head>
 <div id="result"></div>
+
+<article class="prose lg:prose-xl">
+
 <h1>Recent posts</h1>
 
 <ul>
@@ -49,3 +49,4 @@
 		</li>
 	{/each}
 </ul>
+</article>
