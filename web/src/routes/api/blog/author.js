@@ -6,7 +6,7 @@ export async function get (req, res) {
    
   
 
-    const query = "*[_type == 'author']{_id, slug, title, image, bio, name}";
+    const query = "*[_type == 'author']{_id, slug, title, image, bio, name, studier, publikationer, utstallningar, stipendier}";
     const author = await client.fetch(query)
     res.end(JSON.stringify({ author }));
   } catch (err) {
