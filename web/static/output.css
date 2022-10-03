@@ -2025,6 +2025,12 @@ body[dir="rtl"] .checkbox:checked,
   border-bottom-color: hsl(var(--bc) / 20%);
 }
 
+.table-normal :where(th, td) {
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .absolute {
   position: absolute;
 }
