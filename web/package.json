@@ -5,7 +5,7 @@
   "version": "0.0.21",
   "scripts": {
     "dev": "sapper dev",
-    "build": "sapper export",
+    "build": "npx tailwindcss build -i static/main.css -o static/output.css && sapper export",
     "export": "sapper export",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
@@ -13,10 +13,11 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
-
     "@sanity/client": "^2.1.0",
     "@sanity/image-url": "^0.140.19",
+    "@tailwindcss/typography": "^0.5.7",
     "compression": "^1.7.4",
+    "daisyui": "^2.31.0",
     "groq": "^0.147.0",
     "polka": "^1.0.0-next.11",
     "sirv": "^0.4.2"
@@ -33,9 +34,8 @@
     "@rollup/plugin-node-resolve": "^7.1.1",
     "@rollup/plugin-replace": "^2.2.0",
     "@sanity/block-content-to-hyperscript": "^2.0.10",
-    
     "npm-run-all": "^4.1.5",
-
+    "postcss-import": "^15.0.0",
     "rollup": "^2.2.0",
     "rollup-plugin-babel": "^4.0.2",
     "rollup-plugin-svelte": "^5.1.1",
@@ -43,6 +43,5 @@
     "sapper": "^0.27.11",
     "svelte": "^3.20.1",
     "svelte-loader": "^2.13.6"
-
   }
 }

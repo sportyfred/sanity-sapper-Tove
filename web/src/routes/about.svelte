@@ -32,7 +32,7 @@
    <BlockContent blocks={author[0].bio} {serializers} />
 
 
-<table class="table w-full">
+<table class="table table-compact">
     <!-- head -->
     <thead>
       <tr>

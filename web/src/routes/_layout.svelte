@@ -3,7 +3,7 @@
 
 	export let segment;
 
-  let checked = 'checked';
+  let checked = '';
 
 function handleClick() {
     (checked == 'checked') ? checked = '': checked = 'checked';
