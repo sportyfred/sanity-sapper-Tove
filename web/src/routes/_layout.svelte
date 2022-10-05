@@ -3,7 +3,7 @@
 
 	export let segment;
 
-  let checked = '';
+  let checked = 'checked';
 
 function handleClick() {
     (checked == 'checked') ? checked = '': checked = 'checked';
@@ -23,9 +23,10 @@ function handleClick() {
 
         </label>
       </div>
-      <div class="p-4 overflow-x-auto"><article class="prose lg:prose-xl max-w-none">
+      <div class="p-4 overflow-x-auto"><article class="prose max-w-none">
      
 
+<article class="prose lg:prose-xl">
   <slot></slot></article>
 
       </div>

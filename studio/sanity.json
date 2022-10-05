@@ -15,7 +15,10 @@
     "@sanity/dashboard",
     "@sanity/desk-tool",
     "dashboard-widget-structure-menu",
-    "@sanity/code-input"
+    "dashboard-widget-document-list",
+    "dashboard-widget-netlify",
+    "@sanity/code-input",
+    "table"
   ],
   "parts": [
     {
